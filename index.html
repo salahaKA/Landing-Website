@@ -1,75 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arsha - Homepage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arsha - Homepage</title>
+    <link rel="icon" type="image/png" href="./Public/img1.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
-  <a class="navbar-brand fw-bold" href="#">ARSHA</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav me-3">
-      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-          Dropdown
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-        </ul>
-      </li>
-      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-    </ul>
-    <a class="btn btn-outline-light" href="#">Get Started</a>
-  </div>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color:#37517e;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#">ARSHA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<!-- HERO SECTION -->
-<section class="hero d-flex align-items-center text-white py-5" style="background-color:#37517e;">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h1 class="fw-bold">Better Solutions For Your Business</h1>
-        <p class="mb-4">We are team of talented designers making websites with Bootstrap</p>
-        <a href="#" class="btn btn-info me-3">Get Started</a>
-        <a href="#" class="btn btn-outline-light"><i class="fas fa-play-circle me-2"></i>Watch Video</a>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="your-image.png" alt="Hero Illustration" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</section>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center me-3">
+                    <li class="nav-item"><a class="nav-link active text-info" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                </ul>
+                <a class="btn btn-primary rounded-pill px-4" style="background-color:#47b2e4; border:none;" href="#">Get
+                    Started</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- LOGO SECTION -->
-<section class="py-4 bg-light text-center">
-  <div class="container">
-    <div class="row justify-content-center align-items-center g-3">
-      <div class="col-4 col-md-2"><img src="trustly.png" class="img-fluid" alt="Trustly"></div>
-      <div class="col-4 col-md-2"><img src="oldendorff.png" class="img-fluid" alt="Oldendorff"></div>
-      <div class="col-4 col-md-2"><img src="lilly.png" class="img-fluid" alt="Lilly"></div>
-      <div class="col-4 col-md-2"><img src="myob.png" class="img-fluid" alt="MYOB"></div>
-      <div class="col-4 col-md-2"><img src="belimo.png" class="img-fluid" alt="Belimo"></div>
-      <div class="col-4 col-md-2"><img src="lifegroups.png" class="img-fluid" alt="LifeGroups"></div>
-    </div>
-  </div>
-</section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- HERO SECTION -->
+    <section class="hero d-flex align-items-center text-white py-5" style="background-color:#37517e;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="fw-bold">Better Solutions For Your Business</h1>
+                    <p class="mb-4">We are team of talented designers making websites with Bootstrap</p>
+                    <a href="#" class="btn btn-info me-3">Get Started</a>
+                    <!-- <a href="#" class="btn btn-outline-light"><i class="fas fa-play-circle me-2"></i>Watch Video</a> -->
+                    <a href="#" class="btn btn-outline-light d-inline-flex align-items-center">
+                        <i class="fas fa-play-circle me-2"></i>
+                        Watch Video
+                        <i class="fas fa-download ms-2" style="color: limegreen;"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./Public/img1.png" alt="Hero Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOGO SECTION -->
+    <section class="py-4 bg-light text-center">
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-3">
+                <div class="col-4 col-md-2"><img src="./Public/trustly.png" class="img-fluid logo-img" alt="Trustly">
+                </div>
+                <div class="col-4 col-md-2"><img src="./Public/oldendorf.png" class="img-fluid logo-img"
+                        alt="Oldendorff"></div>
+                <div class="col-4 col-md-2"><img src="./Public/lilly.png" class="img-fluid logo-img" alt="Lilly"></div>
+                <div class="col-4 col-md-2"><img src="./Public/myob.png" class="img-fluid logo-img" alt="MYOB"></div>
+                <div class="col-4 col-md-2"><img src="./Public/belimo.png" class="img-fluid logo-img" alt="Belimo">
+                </div>
+                <div class="col-4 col-md-2"><img src="./Public/lifegroups.png" class="img-fluid logo-img"
+                        alt="LifeGroups"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- ABOUT SECTION -->
+    <section class="section py-5">
+        <section class="about-section py-5">
+            <div class="container">
+                <h2 class="section-title">ABOUT US</h2>
+                <div class="about-content">
+                    <div class="left">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                        <ul class="checklist">
+                            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li>Ullamco laboris nisi ut aliquip ex ea commodo</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURE / ACCORDION SECTION -->
+        <section class="feature-section py-5">
+            <div class="container">
+                <div class="feature-wrapper">
+                    <div class="feature-text">
+                        <h3><strong>Eum ipsam laborum deleniti</strong> <span class="highlight">velit pariatur
+                                architecto aut nihil</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.</p>
+
+                        <div class="accordion">
+                            <div class="accordion-item active">
+                                <div class="accordion-title">01 Non consectetur a erat nam at lectus urna duis?</div>
+                                <div class="accordion-content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                                    id volutpat lacus laoreet non curabitur gravida.</div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-title">02 Feugiat scelerisque varius morbi enim nunc faucibus a
+                                    pellentesque?</div>
+                                <div class="accordion-content">Curabitur gravida arcu ac tortor dignissim convallis
+                                    aenean et. Purus non enim praesent elementum facilisis.</div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-title">03 Dolor sit amet consectetur adipiscing elit pellentesque?
+                                </div>
+                                <div class="accordion-content">Purus semper eget duis at tellus at urna condimentum
+                                    mattis. Elementum nisi quis eleifend quam adipiscing vitae proin.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="illustration">
+                        <img src="./Public/image2.jpeg" alt="Illustration" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills-section py-5">
+            <div class="container skills-container">
+                <div class="skills-illustration">
+                    <img src="./Public/img3.avif" alt="Skills Illustration" />
+                </div>
+                <div class="skills-content">
+                    <h3>Voluptatem dignissimos provident <br> quasi corporis voluptas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+
+                    <div class="skill">
+                        <span class="skill-name">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-fill="100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-fill="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-fill="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Photoshop</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-fill="55%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+
+
+
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">CONTACT</h2>
+                <hr class="contact-underline mx-auto">
+                <p class="text-muted">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+
+            <div class="row g-4 shadow-sm p-4 rounded contact-box">
+                <!-- Contact Info -->
+                <div class="col-md-6">
+                    <div class="bg-white p-4 rounded border contact-info">
+                        <div class="mb-4">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <strong>Address</strong><br>
+                            A108 Adam Street, New York, NY 535022
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
+                            <strong>Call Us</strong><br>
+                            +1 5589 55488 55
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <strong>Email Us</strong><br>
+                            info@example.com
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.3614644911563!2d-74.0061377!3d40.710058599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2sin!4v1746783058706!5m2!1sen!2sin"
+                            width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-6">
+                    <div class="bg-white p-4 rounded border contact-form">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="6" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary rounded-pill px-4">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section text-center py-5">
+        <div class="container">
+            <h2 class="fw-bold text-primary mb-2">Join Our Newsletter</h2>
+            <p class="text-muted mb-4">Subscribe to our newsletter and receive the latest news about our products and
+                services!</p>
+            <form class="d-flex justify-content-center align-items-center newsletter-form">
+                <input type="email" class="form-control shadow-sm" placeholder="Enter your email">
+                <button type="submit" class="btn btn-primary ms-2">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section bg-white text-dark pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+
+                <!-- Company Info -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold text-primary">ARSHA</h5>
+                    <p>A108 Adam Street<br>New York, NY 535022</p>
+                    <p><strong>Phone:</strong> +1 5589 55488 55</p>
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Useful Links</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Home</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>About us</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Services</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Terms of service</li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Our Services</h6>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Web Design</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Web Development</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Product Management</li>
+                        <li><i class="fas fa-chevron-right text-primary me-2"></i>Marketing</li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-secondary rounded-circle"><i
+                                class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-secondary rounded-circle"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-secondary rounded-circle"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-secondary rounded-circle"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="text-center small text-muted">
+                <p>© Copyright <strong>Arsha</strong> All Rights Reserved</p>
+                <p>Designed by <a href="https://bootstrapmade.com/" class="text-decoration-none text-primary"
+                        target="_blank">Kadeejath Salaha</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const accordionItems = document.querySelectorAll('.accordion-item');
+
+        accordionItems.forEach(item => {
+            item.addEventListener('click', () => {
+                accordionItems.forEach(i => i.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+
+
+        document.querySelectorAll(".accordion-title").forEach(title => {
+            title.addEventListener("click", () => {
+                const item = title.parentElement;
+                item.classList.toggle("active");
+            });
+        });
+
+        // Animate skills progress bars on page load
+        window.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".progress-fill").forEach(bar => {
+                const fill = bar.getAttribute("data-fill");
+                bar.style.width = fill;
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

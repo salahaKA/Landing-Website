@@ -11,3 +11,283 @@
     transition: 0.3s;
   }
   
+
+  .logo-img {
+    max-height: 50px; /* or 30px based on your reference */
+    object-fit: contain;
+  }
+  
+
+  .newsletter-section {
+    background-color: #f8f9fa;
+  }
+  
+  .newsletter-form input[type="email"] {
+    width: 400px;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+  }
+  
+  .newsletter-form .btn {
+    border-radius: 25px;
+    padding: 10px 30px;
+    background: #47b2e4;
+    border: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-section a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-section .btn-outline-secondary {
+    border-radius: 50%;
+    padding: 8px 12px;
+  }
+  
+
+  .contact-section {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .contact-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #00aaff;
+    border: none;
+    margin-top: 8px;
+  }
+  
+  .contact-box {
+    background: white;
+    border-top: 3px solid #00aaff;
+  }
+  
+  .contact-info i {
+    font-size: 1.5rem;
+    background-color: #e9f6fb;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #00aaff;
+    vertical-align: middle;
+  }
+  
+  .contact-info strong {
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .contact-info div {
+    color: #555;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form .btn-primary {
+    background-color: #00aaff;
+    border-color: #00aaff;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form .btn-primary:hover {
+    background-color: #007acc;
+    border-color: #007acc;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05) !important;
+  }
+  
+  .text-primary {
+    color: #0d3c61 !important;
+  }
+
+  
+
+
+  /* General Section Styling */
+.section {
+    padding: 4rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  /* GENERAL STYLES */
+.section {
+    background-color: #f9f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.py-5 {
+    padding: 3rem 0;
+}
+
+/* ABOUT SECTION */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-content .left, .about-content .right {
+    flex: 1;
+}
+
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist li::before {
+    content: "✓ ";
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* FEATURE SECTION */
+.feature-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-text h3 {
+    font-size: 24px;
+    color: #1f2d55;
+}
+
+.feature-text .highlight {
+    color: #1d4ed8;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.accordion-title {
+    padding: 15px 20px;
+    font-weight: bold;
+    border-left: 4px solid #1d4ed8;
+    background: #f0f6ff;
+    transition: background 0.3s;
+}
+
+.accordion-content {
+    padding: 15px 20px;
+    display: none;
+    background: #fff;
+    color: #333;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.illustration img {
+    max-width: 100%;
+}
+
+/* SKILLS SECTION */
+.skills-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.skills-illustration img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.skills-content {
+    flex: 1;
+}
+
+.skills-content h3 {
+    font-size: 24px;
+    color: #1f2d55;
+    margin-bottom: 10px;
+}
+
+.skills-content p {
+    margin-bottom: 20px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background: #e4eaf1;
+    height: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: #1d4ed8;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+  
