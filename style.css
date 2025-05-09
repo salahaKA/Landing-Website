@@ -1,0 +1,13 @@
+/* Hover for navbar links */
+.nav-link:hover {
+    color: #00b6ff !important;
+  }
+  
+  /* Button hover effects */
+  .btn-info:hover {
+    background-color: #00a3e0;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
