@@ -489,86 +489,92 @@
     }
 }
 
-/* Pricing style */
+/* Pricing Section Styles */
 .pricing-section {
-    padding: 60px 20px;
-    background-color: #f4f7fa;
+    background-color: #f8f9fa;
+    padding: 60px 0;
     text-align: center;
 }
 
 .pricing-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 30px;
     margin-top: 40px;
 }
 
 .pricing-card {
-    background-color: white;
-    border-radius: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
     padding: 30px 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
-    transition: transform 0.3s;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.pricing-card:hover {
-    transform: translateY(-5px);
+.pricing-card:hover,
+.pricing-card.active {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
 }
 
-.pricing-card.featured {
-    border: 2px solid #0d47a1;
+.featured {
+    border: 2px solid #007bff;
 }
 
 .pricing-card h3 {
-    font-size: 20px;
+    margin-bottom: 20px;
     font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    color: #343a40;
 }
 
 .price {
     font-size: 32px;
-    color: #0d47a1;
+    font-weight: bold;
+    color: #007bff;
     margin-bottom: 20px;
 }
 
 .price span {
-    font-size: 16px;
-    color: #666;
+    font-size: 14px;
+    color: #6c757d;
 }
 
 .pricing-card ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .pricing-card ul li {
     margin: 10px 0;
-    color: #333;
+    font-size: 15px;
 }
 
 .pricing-card ul li.disabled {
-    color: #aaa;
+    color: #ccc;
     text-decoration: line-through;
 }
 
 .buy-btn {
-    background-color: #0d47a1;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 25px;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .buy-btn:hover {
-    background-color: #09306e;
+    background-color: #0056b3;
+}
+
+.pricing-card.active {
+    border: 2px solid #28a745; /* Green border */
+    background-color: #e8f5e9; /* Light green background */
 }
 
 /* Responsive */

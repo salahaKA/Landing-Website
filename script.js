@@ -89,66 +89,100 @@ navLinks.forEach((link) => {
   });
 });
 
-
 function playVideo(url) {
-    const frame = document.getElementById("videoFrame");
-    if (frame) {
-        frame.src = url + "?autoplay=1";  // Sets the video URL with autoplay
-    }
+  const frame = document.getElementById("videoFrame");
+  if (frame) {
+    frame.src = url + "?autoplay=1"; // Sets the video URL with autoplay
+  }
 }
 
 function stopVideo() {
-    const frame = document.getElementById("videoFrame");
-    if (frame) {
-        frame.src = "";  // Stops the video by clearing the iframe src
-    }
+  const frame = document.getElementById("videoFrame");
+  if (frame) {
+    frame.src = ""; // Stops the video by clearing the iframe src
+  }
 }
 
-
-document.getElementById('videoModal').addEventListener('hidden.bs.modal', stopVideo);
+document
+  .getElementById("videoModal")
+  .addEventListener("hidden.bs.modal", stopVideo);
 
 function toggleText(btn) {
-    const moreText = document.getElementById("moreText");
+  const moreText = document.getElementById("moreText");
 
-    if (moreText.style.display === "none" || moreText.style.display === "") {
-      moreText.style.display = "block";
-      btn.innerHTML = "Read Less ←";
-    } else {
-      moreText.style.display = "none";
-      btn.innerHTML = "Read More →";
-    }
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    moreText.style.display = "block";
+    btn.innerHTML = "Read Less ←";
+  } else {
+    moreText.style.display = "none";
+    btn.innerHTML = "Read More →";
   }
-
-
+}
 
 //   form validation
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-        event.preventDefault();
-        const form = this;
-        let valid = true;
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = this;
+    let valid = true;
 
-        // Validate all required fields
-        ["name", "email", "subject", "message"].forEach(id => {
-            const input = document.getElementById(id);
-            if (!input.value.trim()) {
-                input.classList.add("is-invalid");
-                valid = false;
-            } else {
-                input.classList.remove("is-invalid");
-            }
+    // Validate all required fields
+    ["name", "email", "subject", "message"].forEach((id) => {
+      const input = document.getElementById(id);
+      if (!input.value.trim()) {
+        input.classList.add("is-invalid");
+        valid = false;
+      } else {
+        input.classList.remove("is-invalid");
+      }
 
-            // Email specific validation
-            if (id === "email") {
-                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-                if (!emailPattern.test(input.value)) {
-                    input.classList.add("is-invalid");
-                    valid = false;
-                }
-            }
-        });
-
-        if (valid) {
-            alert("Message sent successfully!");
-            form.reset();
+      // Email specific validation
+      if (id === "email") {
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!emailPattern.test(input.value)) {
+          input.classList.add("is-invalid");
+          valid = false;
         }
+      }
     });
+
+    if (valid) {
+      alert("Message sent successfully!");
+      form.reset();
+    }
+  });
+
+// Pricing card selection logic
+document.querySelectorAll(".buy-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    
+    document.querySelectorAll(".pricing-card").forEach((card) => {
+      card.classList.remove("active");
+      card.style.backgroundColor = "";
+      card.style.borderColor = "";
+    });
+ 
+    const card = button.closest(".pricing-card");
+    card.classList.add("active");
+    const plan = card.dataset.plan;
+
+    switch (plan) {
+      case "Free":
+        card.style.backgroundColor = "#e3f2fd"; // Light Blue
+        card.style.borderColor = "#2196f3";
+        break;
+      case "Business":
+        card.style.backgroundColor = "#fff3cd"; // Light Yellow
+        card.style.borderColor = "#ffc107";
+        break;
+      case "Developer":
+        card.style.backgroundColor = "#fce4ec"; // Light Pink
+        card.style.borderColor = "#e91e63";
+        break;
+    }
+
+    alert(`You selected the ${plan} Plan!`);
+  });
+});
+
