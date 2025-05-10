@@ -7,15 +7,14 @@
     <title>Arsha - Homepage</title>
     <link rel="icon" type="image/png" href="./Public/img1.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color:#37517e;">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" style="background-color:#37517e;">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#">ARSHA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -24,52 +23,89 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center me-3">
-                    <li class="nav-item"><a class="nav-link active text-info" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Services</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Team</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active text-info" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#pricing">Pricing</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown">
                             Dropdown
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                 </ul>
-                <a class="btn btn-primary rounded-pill px-4" style="background-color:#47b2e4; border:none;" href="#">Get
+                <a class="btn btn-primary rounded-pill px-4" style="background-color:#47b2e4; border:none;"
+                    href="#home">Get
                     Started</a>
             </div>
         </div>
     </nav>
 
-
     <!-- HERO SECTION -->
-    <section class="hero d-flex align-items-center text-white py-5" style="background-color:#37517e;">
+    <section class="hero d-flex align-items-center text-white py-5" style="background-color:#37517e;" id="home">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1 class="fw-bold">Better Solutions For Your Business</h1>
-                    <p class="mb-4">We are team of talented designers making websites with Bootstrap</p>
-                    <a href="#" class="btn btn-info me-3">Get Started</a>
-                    <!-- <a href="#" class="btn btn-outline-light"><i class="fas fa-play-circle me-2"></i>Watch Video</a> -->
-                    <a href="#" class="btn btn-outline-light d-inline-flex align-items-center">
-                        <i class="fas fa-play-circle me-2"></i>
-                        Watch Video
-                        <i class="fas fa-download ms-2" style="color: limegreen;"></i>
-                    </a>
+
+                <div class="col-md-6 text-md-start text-center">
+                    <h1 class="fw-bold display-5">Better Solutions For<br>Your Business</h1>
+                    <p class="mb-4 fs-5">We are team of talented designers making<br>websites with Bootstrap</p>
+
+                    <div
+                        class="d-flex justify-content-md-start justify-content-center align-items-center flex-wrap gap-3">
+                        <a href="#about" class="btn btn-info btn-lg px-4 py-2 text-white">Get Started</a>
+
+                        <!-- <a href="#" class="btn btn-outline-light btn-lg px-4 py-2 d-flex align-items-center">
+                            <i class="fas fa-play-circle me-2 fs-5"></i>
+                            Watch Video
+                            <i class="fas fa-download ms-2" style="color: limegreen;"></i>
+                        </a> -->
+                        <a href="#" class="btn btn-outline-light btn-lg px-4 py-2 d-flex align-items-center"
+                            data-bs-toggle="modal" data-bs-target="#videoModal"
+                            onclick="playVideo('https://www.youtube.com/embed/uSgcWDkwc3U')" <i
+                            class="fas fa-play-circle me-2 fs-5"></i>
+                            Watch Video
+                            <i class="fas fa-download ms-2" style="color: limegreen;"></i>
+                        </a>
+
+
+                    </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="./Public/img1.png" alt="Hero Illustration" class="img-fluid">
+
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="./Public/img1.png" alt="Hero Illustration" class="img-fluid" style="max-height: 400px;">
                 </div>
             </div>
         </div>
     </section>
+    <!-- Video Modal (Place this after the Hero Section) -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Watch Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Video iframe -->
+                    <iframe id="videoFrame" width="100%" height="315" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- LOGO SECTION -->
     <section class="py-4 bg-light text-center">
@@ -89,113 +125,136 @@
         </div>
     </section>
 
-
-
-
     <!-- ABOUT SECTION -->
-    <section class="section py-5">
-        <section class="about-section py-5">
-            <div class="container">
-                <h2 class="section-title">ABOUT US</h2>
-                <div class="about-content">
-                    <div class="left">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
-                        <ul class="checklist">
-                            <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                            <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                            <li>Ullamco laboris nisi ut aliquip ex ea commodo</li>
-                        </ul>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4" style="color: #2c3e50;">ABOUT US</h2>
+            <hr class="mx-auto mb-5" style="width: 80px; border: 2px solid #0dcaf0;">
+
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6 mb-4">
+                    <p class="mb-3 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i> Ullamco laboris nisi ut
+                            aliquip ex ea commodo consequat.</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i> Duis aute irure dolor in
+                            reprehenderit in voluptate velit.</li>
+                        <li><i class="fas fa-check-circle text-info me-2"></i> Ullamco laboris nisi ut aliquip ex ea
+                            commodo</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <p class="text-muted">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
+                    <!-- Hidden content -->
+                    <div id="moreText" style="display: none;">
+                        <p class="text-muted">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus
+                            nibh.
+                            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        </p>
                     </div>
-                    <div class="right">
-                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <a class="read-more" href="#">Read More →</a>
-                    </div>
+
+                    <!-- Toggle Button -->
+                    <a href="javascript:void(0);" class="btn btn-outline-info mt-2" onclick="toggleText(this)">Read More
+                        →</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- FEATURE / ACCORDION SECTION -->
-        <section class="feature-section py-5">
-            <div class="container">
-                <div class="feature-wrapper">
-                    <div class="feature-text">
-                        <h3><strong>Eum ipsam laborum deleniti</strong> <span class="highlight">velit pariatur
-                                architecto aut nihil</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.</p>
 
-                        <div class="accordion">
-                            <div class="accordion-item active">
-                                <div class="accordion-title">01 Non consectetur a erat nam at lectus urna duis?</div>
-                                <div class="accordion-content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
-                                    id volutpat lacus laoreet non curabitur gravida.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-title">02 Feugiat scelerisque varius morbi enim nunc faucibus a
-                                    pellentesque?</div>
-                                <div class="accordion-content">Curabitur gravida arcu ac tortor dignissim convallis
-                                    aenean et. Purus non enim praesent elementum facilisis.</div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-title">03 Dolor sit amet consectetur adipiscing elit pellentesque?
-                                </div>
-                                <div class="accordion-content">Purus semper eget duis at tellus at urna condimentum
-                                    mattis. Elementum nisi quis eleifend quam adipiscing vitae proin.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="illustration">
-                        <img src="./Public/image2.jpeg" alt="Illustration" />
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- SKILLS SECTION -->
-        <section class="skills-section py-5">
-            <div class="container skills-container">
-                <div class="skills-illustration">
-                    <img src="./Public/img3.avif" alt="Skills Illustration" />
-                </div>
-                <div class="skills-content">
-                    <h3>Voluptatem dignissimos provident <br> quasi corporis voluptas</h3>
+
+    <!-- FEATURE / ACCORDION SECTION -->
+    <section class="feature-section py-5">
+        <div class="container">
+            <div class="feature-wrapper">
+                <div class="feature-text">
+                    <h3><strong>Eum ipsam laborum deleniti</strong> <span class="highlight">velit pariatur
+                            architecto aut nihil</span></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                        labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.</p>
 
-                    <div class="skill">
-                        <span class="skill-name">HTML</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-fill="100%"></div>
+                    <div class="accordion">
+                        <div class="accordion-item active">
+                            <div class="accordion-title">01 Non consectetur a erat nam at lectus urna duis?</div>
+                            <div class="accordion-content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna
+                                id volutpat lacus laoreet non curabitur gravida.</div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">CSS</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-fill="90%"></div>
+                        <div class="accordion-item">
+                            <div class="accordion-title">02 Feugiat scelerisque varius morbi enim nunc faucibus a
+                                pellentesque?</div>
+                            <div class="accordion-content">Curabitur gravida arcu ac tortor dignissim convallis
+                                aenean et. Purus non enim praesent elementum facilisis.</div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-fill="75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span class="skill-name">Photoshop</span>
-                        <div class="progress-bar">
-                            <div class="progress-fill" data-fill="55%"></div>
+                        <div class="accordion-item">
+                            <div class="accordion-title">03 Dolor sit amet consectetur adipiscing elit pellentesque?
+                            </div>
+                            <div class="accordion-content">Purus semper eget duis at tellus at urna condimentum
+                                mattis. Elementum nisi quis eleifend quam adipiscing vitae proin.</div>
                         </div>
                     </div>
                 </div>
+                <div class="illustration">
+                    <img src="./Public/image2.jpeg" alt="Illustration" />
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section py-5">
+        <div class="container skills-container">
+            <div class="skills-illustration">
+                <img src="./Public/img3.avif" alt="Skills Illustration" />
+            </div>
+            <div class="skills-content">
+                <h3>Voluptatem dignissimos provident <br> quasi corporis voluptas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</p>
+
+                <div class="skill">
+                    <span class="skill-name">HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-fill="100%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-fill="90%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-fill="75%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Photoshop</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-fill="55%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
 
 
     <!-- SERVICES SECTION -->
-    <section class="services-section py-5">
+    <section class="services-section py-5" id="services">
         <div class="container">
             <h2 class="section-title">SERVICES</h2>
             <p class="section-subtitle">
@@ -248,9 +307,8 @@
     </section>
 
 
-
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="portfolio">
         <div class="container">
             <h2 class="section-title">PORTFOLIO</h2>
             <p class="section-subtitle">
@@ -268,27 +326,21 @@
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
                 <div class="portfolio-item app"><img src="./Public/portfolio/App2.jpeg" alt="App 1"></div>
-                <div class="portfolio-item card"><img src="./Public/portfolio/App3.jpeg" alt="Card 1"></div>
-                <div class="portfolio-item web"><img src="./Public/portfolio/App4.jpeg" alt="Web 1"></div>
-                <div class="portfolio-item card"><img src="./Public/portfolio/App6.jpeg" alt="Card 2"></div>
-                <div class="portfolio-item app"><img src="./Public/portfolio/App1.jpeg" alt="App 2"></div>
-                <div class="portfolio-item web"><img src="./Public/portfolio/App5.jpeg" alt="Web 2"></div>
-                <div class="portfolio-item card"><img src="./Public/portfolio/App8.jpeg" alt="Card 3"></div>
-                <div class="portfolio-item web"><img src="./Public/portfolio/App7.jpeg" alt="Web 3"></div>
+                <div class="portfolio-item card"><img src="./Public/portfolio/App6.jpeg" alt="Card 1"></div>
+                <div class="portfolio-item web"><img src="./Public/portfolio/App3.jpeg" alt="Web 1"></div>
+                <div class="portfolio-item card"><img src="./Public/portfolio/App1.jpeg" alt="Card 2"></div>
+                <div class="portfolio-item app"><img src="./Public/portfolio/App7.jpeg" alt="App 2"></div>
+                <div class="portfolio-item web"><img src="./Public/portfolio/App4.jpeg" alt="Web 2"></div>
+                <div class="portfolio-item card"><img src="./Public/portfolio/App5.jpeg" alt="Card 3"></div>
+                <div class="portfolio-item web"><img src="./Public/portfolio/App8.jpeg" alt="Web 3"></div>
                 <div class="portfolio-item app"><img src="./Public/portfolio/App9.jpeg" alt="App 3"></div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
     <!-- TEAM SECTION -->
-    <section class="team-section">
+    <section class="team-section" id="team">
         <div class="container">
             <h2 class="section-title">TEAM</h2>
             <p class="section-subtitle">
@@ -350,15 +402,12 @@
                         <i class="fab fa-linkedin-in"></i>
                     </div>
                 </div>
-
-                <!-- Add more team members here -->
-
             </div>
         </div>
     </section>
 
     <!-- PRICING SECTION -->
-    <section class="pricing-section">
+    <section class="pricing-section" id="pricing">
         <div class="container">
             <h2 class="section-title">PRICING</h2>
             <p class="section-subtitle">
@@ -463,16 +512,89 @@
 
 
 
+    <section class="faq-section py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3">FREQUENTLY ASKED QUESTIONS</h2>
+            <p class="text-muted mb-5">
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                Sit sint consectetur velit. Quisquam quos quisquam cupiditate...
+            </p>
+
+            <div class="accordion accordion-flush text-start" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button text-primary fw-semibold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <i class="bi bi-question-circle me-2 text-primary"></i> Non consectetur a erat nam at lectus
+                            urna duis?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet...
+                        </div>
+                    </div>
+                </div>
 
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq2">
+                            <i class="bi bi-question-circle me-2 text-primary"></i> Feugiat scelerisque varius morbi
+                            enim nunc faucibus?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Answer goes here.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            <i class="bi bi-question-circle me-2 text-primary"></i> Dolor sit amet consectetur
+                            adipiscing elit pellentesque?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Cras fermentum odio
+                            eu feugiat pretium.
+                        </div>
+                    </div>
+                </div>
 
-    <section class="contact-section py-5">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            <i class="bi bi-question-circle me-2 text-primary"></i> Ac odio tempor orci dapibus. Aliquam
+                            eleifend mi in nulla?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Ac odio tempor orci dapibus ultrices in iaculis nunc. Faucibus pulvinar elementum integer
+                            enim neque volutpat ac.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact-section py-5" id="contact">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-primary">CONTACT</h2>
                 <hr class="contact-underline mx-auto">
-                <p class="text-muted">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                <p class="text-muted">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
                 </p>
             </div>
 
@@ -506,20 +628,26 @@
                 <!-- Contact Form -->
                 <div class="col-md-6">
                     <div class="bg-white p-4 rounded border contact-form">
-                        <form>
+                        <form id="contactForm" novalidate>
                             <div class="row mb-3">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
                                 </div>
                                 <div class="col">
-                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                        required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject" required>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                <div class="invalid-feedback">Please enter a subject.</div>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="6" placeholder="Message" required></textarea>
+                                <textarea class="form-control" id="message" rows="6" placeholder="Message"
+                                    required></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary rounded-pill px-4">Send Message</button>
@@ -529,12 +657,7 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
-
-
-
-
 
 
     <!-- Newsletter Section -->
@@ -608,80 +731,22 @@
                 <p>© Copyright <strong>Arsha</strong> All Rights Reserved</p>
                 <p>Designed by <a href="https://bootstrapmade.com/" class="text-decoration-none text-primary"
                         target="_blank">Kadeejath Salaha</a></p>
+                <!-- Social Links -->
+                <div class="mt-2">
+                    <a href="https://www.linkedin.com/in/salahaka/" class="text-primary me-3" target="_blank"
+                        title="LinkedIn">
+                        <i class="fab fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/salahaKA" class="text-dark" target="_blank" title="GitHub">
+                        <i class="fab fa-github fa-lg"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
-
-    <script>
-        const accordionItems = document.querySelectorAll('.accordion-item');
-        const filterButtons = document.querySelectorAll(".filter-btn");
-        const portfolioItems = document.querySelectorAll(".portfolio-item");
-
-        let currentIndex = 0;
-        const testimonials = document.querySelectorAll('.testimonial-item');
-        const dots = document.querySelectorAll('.dot');
-
-        accordionItems.forEach(item => {
-            item.addEventListener('click', () => {
-                accordionItems.forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-
-
-
-        document.querySelectorAll(".accordion-title").forEach(title => {
-            title.addEventListener("click", () => {
-                const item = title.parentElement;
-                item.classList.toggle("active");
-            });
-        });
-
-        // Animate skills progress bars on page load
-        window.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".progress-fill").forEach(bar => {
-                const fill = bar.getAttribute("data-fill");
-                bar.style.width = fill;
-            });
-        });
-
-
-
-        filterButtons.forEach(btn => {
-            btn.addEventListener("click", () => {
-                // Activate clicked button
-                filterButtons.forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
-
-                // Filter items
-                const filter = btn.getAttribute("data-filter");
-                portfolioItems.forEach(item => {
-                    if (filter === "all" || item.classList.contains(filter)) {
-                        item.style.display = "block";
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
-            });
-        });
-
-
-        function showTestimonial(index) {
-            testimonials.forEach((item, i) => {
-                item.classList.toggle('active', i === index);
-                dots[i].classList.toggle('active', i === index);
-            });
-            currentIndex = index;
-        }
-
-        // Auto-play every 5 seconds
-        setInterval(() => {
-            let nextIndex = (currentIndex + 1) % testimonials.length;
-            showTestimonial(nextIndex);
-        }, 5000);
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
